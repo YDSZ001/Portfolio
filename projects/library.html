@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="以图书馆选座为场景，演示如何用统一的组件表达可用、已选、不可用和提交失败等状态。">
+  <title>图书馆座位预约 | UI／交互设计作品集</title>
+  <link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="site-header wrap">
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"></span>设计作品集</a>
+    <nav aria-label="主导航"><a href="../#work">作品</a><a href="../#about">关于</a><a href="../resume.html">简历</a></nav>
+  </header>
+  <main id="main" class="case wrap">
+    <p class="eyebrow">概念示例 · 组件与状态</p>
+    <h1>图书馆座位预约</h1>
+    <p class="intro">以图书馆选座为场景，演示如何用统一的组件表达可用、已选、不可用和提交失败等状态。</p>
+    <div class="cover library" aria-hidden="true">
+              <div class="mock phone behind"><div class="phone-top"></div><div class="phone-title">我的预约</div><div class="seat-card muted-seat"></div><div class="seat-card muted-seat"></div></div>
+              <div class="mock phone front"><div class="phone-top"></div><div class="phone-title">选择座位</div><div class="seat-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="phone-button">确认预约</div></div>
+            </div>
+    <dl class="case-meta">
+      <div><dt>项目类型</dt><dd>概念示例</dd></div>
+      <div><dt>项目周期</dt><dd>待补充</dd></div>
+      <div><dt>职责示例</dt><dd>组件设计、状态设计、界面原型</dd></div>
+    </dl>
+    <section><h2>用户与问题</h2><p>本案例假设学生经常在手机上快速选座，需要在有限空间内判断座位是否可选，并在冲突发生后快速换座。</p></section>
+    <section>
+      <h2>关键设计决定</h2>
+      <ul>
+        <li><strong>座位状态</strong>　座位组件定义可用、已选和不可用三种状态，同时使用图例与文字说明表达区别。</li>
+        <li><strong>提交确认</strong>　确认按钮上方展示楼层、时间段和座位号，减少用户来回核对。</li>
+        <li><strong>处理冲突</strong>　如果座位已被预约，保留楼层和时间段，并引导用户在同一区域重新选座。</li>
+      </ul>
+    </section>
+    <section><h2>方案迭代与验证</h2><p>示例改动是在颜色区分之外加入选中标识与图例，并增加提交冲突提示。可以在原型走查中让同学模拟换座，记录他们能否找到可选座位并完成预约。</p></section>
+    <nav class="case-next" aria-label="案例导航">
+      <a class="text-link" href="../#work">返回作品列表</a>
+      <a class="text-link" href="flight.html">查看案例 · 航拍任务管理</a>
+    </nav>
+  </main>
+  <footer class="site-footer wrap"><span>UI／交互设计作品集</span><a href="#main">返回顶部</a></footer>
+</body>
+</html>
